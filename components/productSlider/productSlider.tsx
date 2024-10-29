@@ -32,7 +32,7 @@ const ProductSlider = ({coffeeData}:Props) => {
         dots: false,
         infinite: true,
         arrows: true,
-        autoplay:true,
+        autoplay:false,
         speed: 500,
         slidesToShow: 6,
         slidesToScroll: 4,
@@ -58,8 +58,8 @@ const ProductSlider = ({coffeeData}:Props) => {
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToShow: 2,
+              slidesToScroll: 2
             }
           }
         ]

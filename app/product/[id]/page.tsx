@@ -51,7 +51,7 @@ const ProductDetail = ({params}:{params:{id:string}}) => {
   return (
     <div className='pt-2'>
       <div className="container mx-auto max-w-5xl">
-        <div className="grid grid-cols-2 pt-[3rem]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 px-3 pt-[3rem]">
           <div>
             <Image src={masterProduct.image} alt={masterProduct.title} width={500} height={500}/>
           </div>

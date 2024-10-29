@@ -12,7 +12,7 @@ const HomeCategory = () => {
                 <div className="border-b-8 w-20 my-3"></div>
             </div>
         </div>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-8">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-4 xl:grid-cols-8">
             {product.map((category, index) =>(
                 <a href={`/category/${category.category}`} key={index} className='bg-neutral-900 rounded-lg flex flex-col justify-between p-3 py-5 hover:bg-neutral-700 cursor-pointer'>
                     <div className="">

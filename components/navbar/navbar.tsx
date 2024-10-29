@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="md:container md:mx-auto max-[767px]:w-full">
             <div className="flex flex-row">            
                 <div className="px-3cursor-pointer">
-                    <img src="/images/coffeeLogo.png" alt="Coffee Logo" className="h-11" />
+                    <img src="/images/coffeeLogo.png" alt="Coffee Logo" className="h-11 w-full" />
                 </div>
                 <div className="px-3 flex flex-row justify-between w-full" >
                     <div className="content-center pl-5">

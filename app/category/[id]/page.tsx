@@ -44,8 +44,8 @@ const Category = ({params}:{params:{id:string}}) => {
   return (
     <div className='pt-2'>
         <div className="container mx-auto ">
-            <div className="flex pt-[3rem] gap-5">
-                <div className='w-[20%]'>
+            <div className="flex pt-[3rem] gap-5 max-[767px]:hidden">
+                <div className='w-[20%] '>
                     <div className='flex items-center gap-3 pb-3'>
                         <BiSolidCategoryAlt className='text-2xl'/>
                         <h1 className='text-2xl font-bold'>Category</h1>

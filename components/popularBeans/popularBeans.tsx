@@ -46,12 +46,12 @@ if (!popularData) {
                 </Tab>
                 ))}
             </TabList>
-            <TabPanels className="min-h-[500px]">
+            <TabPanels>
                 {popularData.subCategories.map(({subCategory, product}) =>(
                     <TabPanel key={subCategory} className="rounded-xl bg-white/5 p-3">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
                             {product.slice(0, 4).map((product)=>(
-                                <a href={`/product/${product.id}`} key={product.id} className='bg-neutral-900 flex flex-col justify-between p-2 hover:bg-neutral-700 cursor-pointer min-h-[465px]'>
+                                <a href={`/product/${product.id}`} key={product.id} className='bg-neutral-900 flex flex-col justify-between p-2 hover:bg-neutral-700 cursor-pointer min-h-[465px] max-[1280px]:min-h-fit '>
                                     <div className="bg-white">
                                         <img 
                                             src={product.image.src} 
@@ -60,7 +60,7 @@ if (!popularData) {
                                             />
                                     </div>
                                     <div className="py-3">
-                                        <h1 className="font-semibold mb-3">{product.title}</h1>
+                                        <h1 className="font-semibold mb-3 line-clamp-2">{product.title}</h1>
                                         <span className="text-amber-300">Rp.{product.price}</span>
                                     </div>
                                 </a>
